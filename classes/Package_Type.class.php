@@ -15,7 +15,7 @@ class Package_Type extends conn
           print "<td style = 'text-align: center; font-size:20px; border:1px solid black;'>".$row['Package_Name']."</td>";
            print "<div class='btn-group'><td>";
           print "<a class='btn btn-warning' href='EditPackage_Types.php?id=".$row['ID']."'>Edit</a>";
-          print "<a class='btn btn-danger' onclick='return confirm('Are you sure you want to delete this Reservartion')' style='position: absolute;' href='DeletePackage_Types.php?id=".$row['ID']."'>Delete</a><td> ";
+          print "<a class='btn btn-danger' onclick=\"javascript:return confirm('are you sure you want to delete this?');\" href='DeletePackage_Types.php?id=".$row['ID']."'>Delete</a><td> ";
           print "<div>";
           print "</td>";
           print "</tr>";
